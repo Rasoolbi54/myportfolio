@@ -12,7 +12,7 @@ export default function ContactPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(" https://backend-portfolio-1-etqm.onrender.com/api/contact", formData);
+      await axios.post(" https://portfolio-backendd-39gs.onrender.com/api/contact", formData);
       alert("Message sent successfully!");
       setFormData({ name: "", email: "", message: "" });
     } catch (err) {
