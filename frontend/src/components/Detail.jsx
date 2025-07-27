@@ -3,7 +3,7 @@ import React from "react";
 function Detail() {
   return (
     <div
-      className="text-center pt-16 dark:bg-black dark:text-white   px-10  md:px-0"
+      className="text-center pt-20 dark:bg-black dark:text-white   px-10  md:px-0"
       id="details"
     >
       <div>
@@ -15,7 +15,7 @@ function Detail() {
             I build things on the web.
           </div>
           <div className="pt-3">
-            <p className="text-xl ">
+            <p className="md:text-xl text-md">
               Sometimes I design, sometimes I debug endlessly — but always with
               coffee and curiosity. <br />
               Welcome to my little digital playground — glad you’re here!
