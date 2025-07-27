@@ -22,13 +22,13 @@ export default function ContactPage() {
   };
 
   return (
-    <section className="bg-black text-white min-h-screen py-20 px-6 md:px-24 font-sans" id="contact">
-      <h2 className="text-4xl font-bold mb-12 border-b pb-4 border-white w-fit">Get In Touch</h2>
+    <section className="bg-black dark:bg-white text-white dark:text-black min-h-screen py-20 px-6 md:px-24 font-sans" id="contact">
+      <h2 className="text-4xl font-bold mb-12 border-b pb-4 border-white dark:border-black w-fit">Get In Touch</h2>
 
       <div className="flex flex-col md:flex-row gap-12">
         {/* Socials & Resume */}
         <div className="md:w-1/2 space-y-6">
-          <p className="text-lg text-gray-300">
+          <p className="text-lg text-gray-300 dark:text-gray-600">
             Feel free to connect with me through the platforms below or send me a message through the form.
           </p>
 
@@ -53,7 +53,7 @@ export default function ContactPage() {
           <a
             href="/Rasoolbi_fullstack.pdf"
             download="Rasoolbi_Shaik_Resume.pdf"
-            className="inline-block mt-6 text-sm rounded-full bg-white text-black px-10 py-3 hover:bg-gray-200 transition"
+            className="inline-block mt-6 text-sm rounded-full bg-white dark:bg-black text-black dark:text-white px-10 py-3 hover:bg-gray-200 dark:hover:bg-gray-800 transition"
           >
             Download Resume ↓
           </a>
@@ -61,7 +61,7 @@ export default function ContactPage() {
 
         {/* Contact Form */}
         <div className="md:w-1/2">
-          <div className="bg-white/10 backdrop-blur-md backdrop-saturate-150 text-white rounded-2xl p-8 shadow-xl border border-white/10">
+          <div className="bg-white/10 dark:bg-black/10 backdrop-blur-md backdrop-saturate-150 text-white dark:text-black rounded-2xl p-8 shadow-xl border border-white/10">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label className="block text-sm font-semibold mb-1">Name</label>
@@ -72,7 +72,7 @@ export default function ContactPage() {
                   onChange={handleChange}
                   placeholder="Your Name"
                   required
-                  className="w-full bg-transparent border border-white/30 rounded-lg px-4 py-2 text-sm placeholder-white focus:outline-none focus:ring-2 focus:ring-white"
+                  className="w-full bg-transparent border border-white/30 dark:border-black/40 rounded-lg px-4 py-2 text-sm placeholder-white  dark:placeholder-black focus:outline-none focus:ring-2 focus:ring-white dark:focus:ring-black"
                 />
               </div>
 
@@ -85,7 +85,7 @@ export default function ContactPage() {
                   onChange={handleChange}
                   placeholder="Your Email"
                   required
-                  className="w-full bg-transparent border border-white/30 rounded-lg px-4 py-2 text-sm placeholder-white focus:outline-none focus:ring-2 focus:ring-white"
+                  className="w-full bg-transparent border border-white/30 dark:border-black/40  rounded-lg px-4 py-2 text-sm placeholder-white dark:placeholder-black focus:outline-none focus:ring-2 focus:ring-white dark:focus:ring-black"
                 />
               </div>
 
@@ -98,13 +98,13 @@ export default function ContactPage() {
                   onChange={handleChange}
                   placeholder="Your Message"
                   required
-                  className="w-full bg-transparent border border-white/30 rounded-lg px-4 py-2 text-sm placeholder-white focus:outline-none focus:ring-2 focus:ring-white"
+                  className="w-full bg-transparent border border-white/30 dark:border-black/40  rounded-lg px-4 py-2 text-sm placeholder-white dark:placeholder-black focus:outline-none focus:ring-2 focus:ring-white dark:focus:ring-black"
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="bg-white text-black px-6 py-2 rounded-full hover:bg-gray-200 transition text-sm"
+                className="bg-white text-black px-6 py-2 rounded-full hover:bg-gray-200 dark:bg-black dark:text-white dark:hover:bg-gray-900 transition text-sm"
               >
                 Send Message
               </button>

@@ -16,7 +16,7 @@ function About() {
     "VS Code", "GitHub", "Postman", ]
 
   return (
-    <div id="about" className="bg-gray-50 text-black  flex justify-center items-center md:px-60 px-10 md:-mt-48 -mt-22 md:pt-36 pt-20 pb-20 ">
+    <div id="about" className="bg-gray-50 dark:bg-gray-950 text-black dark:text-white  flex justify-center items-center md:px-60 px-10 md:-mt-48 -mt-22 md:pt-36 pt-20 pb-20 ">
       <div>
         <p className="md:text-6xl  text-5xl font-bold">
           I’m a full stack developer who codes with curiosity and coffee.
@@ -29,7 +29,7 @@ function About() {
           I spend most of my time vibecoding: building, breaking, fixing,
           learning — then doing it all over again. It’s less about chasing
           perfection, more about building something real{" "}
-          <span className="bg-yellow-300">
+          <span className="bg-yellow-300 dark:bg-white dark:text-black">
             {" "}
             (and making sure dark mode feels just right).
           </span>
@@ -47,7 +47,7 @@ function About() {
   {skills.map((skill, index) => (
     <span
       key={index}
-      className="border-2 border-black rounded-full py-2 px-5 md:text-xl text-sm"
+      className="border-2 border-black dark:border-white rounded-full py-2 px-5 md:text-xl text-sm"
     >
       {skill}
     </span>

@@ -2,7 +2,10 @@ import React from "react";
 
 function Detail() {
   return (
-    <div className="text-center pt-30   px-10  md:px-0" id="details">
+    <div
+      className="text-center pt-30 dark:bg-black dark:text-white   px-10  md:px-0"
+      id="details"
+    >
       <div>
         <div>
           <span className="text-2xl font-semibold md:text-2xl ">
@@ -19,18 +22,15 @@ function Detail() {
             </p>
           </div>
 
-         {/* <div className="flex justify-center items-center md:pt-10 pt-3"> */}
-  <a
-  href="mailto:smbrasoolbi138@gmail.com"
-  className="flex justify-center items-center pt-10"
->
-  <div className="text-xl bg-black text-white px-8 py-3 rounded-full gap-2 flex items-center hover:bg-gray-800 transition">
-    Get in Touch <span className="ml-2">→</span>
-  </div>
-</a>
-
-
-
+          {/* <div className="flex justify-center items-center md:pt-10 pt-3"> */}
+          <a
+            href="mailto:smbrasoolbi138@gmail.com"
+            className="flex justify-center items-center pt-10 "
+          >
+            <div className="text-xl bg-black dark:bg-white text-white dark:text-black  hover:cursor-pointer   px-8 py-3 rounded-full gap-2 flex items-center hover:bg-gray-800 transition">
+              Get in Touch <span className="ml-2">→</span>
+            </div>
+          </a>
 
           {/* Scroll Indicator */}
           {/* <div className="flex justify-center items-center mt-20">
@@ -40,10 +40,18 @@ function Detail() {
           </div> */}
 
           <div className="flex justify-center items-center md:-mt-16">
+            {/* Light mode image */}
             <img
               src="computerr.png"
               alt="Computer"
-              className="w-full max-w-2xl"
+              className="w-full max-w-2xl block dark:hidden"
+            />
+
+            {/* Dark mode image */}
+            <img
+              src="darktheme.png" // Replace with your dark mode image path
+              alt="Computer Dark"
+              className="w-full max-w-2xl hidden dark:block"
             />
           </div>
         </div>

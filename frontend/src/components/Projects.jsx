@@ -134,8 +134,8 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-    <section className="bg-gray-50 text-black py-20 px-10 md:px-60 font-sans" id="projects">
-      <p className="md:text-6xl text-5xl font-bold tracking-tight mb-14 border-b border-black pb-4">
+    <section className="bg-gray-50 dark:bg-gray-950  text-black dark:text-white py-20 px-10 md:px-60 font-sans" id="projects">
+      <p className="md:text-6xl text-5xl font-bold tracking-tight mb-14 border-b border-black dark:border-white pb-4">
         PROJECTS
       </p>
 
@@ -162,17 +162,17 @@ export default function ProjectsSection() {
                 {project.tech.map((tech, i) => (
                   <span
                     key={i}
-                    className="text-xs px-3 py-1 border border-black rounded-full group-hover:text-black group-hover:border-black group-hover:bg-white transition"
+                    className="text-xs px-3 py-1 border border-black rounded-full hover:text-white hover:bg-black group-hover:border-black dark:hover:bg-white dark:hover:text-black dark:border-2 dark:border-white transition"
                   >
                     {tech}
                   </span>
-                ))}
+                ))} 
               </div>
               <a
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block text-sm rounded-full bg-black text-white px-10 py-2 hover:opacity-80 transition"
+                className="inline-block text-sm rounded-full bg-black dark:bg-white text-white dark:text-black px-10 py-2 hover:opacity-80 transition"
                 style={{ textDecoration: "none" }}
               >
                 View Project →

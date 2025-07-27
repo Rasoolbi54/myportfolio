@@ -35,7 +35,7 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section className="bg-white text-gray-900 py-16  pt-36 pb-20 md:px-60 px-10 font-sans" id="experience">
+    <section className="bg-white dark:bg-black text-gray-900  dark:text-white py-16  pt-36 pb-20 md:px-60 px-10 font-sans" id="experience">
       <p className="md:text-6xl text-5xl font-bold tracking-tight mb-12 border-b pb-4">
         EXPERIENCE
       </p>
@@ -47,27 +47,27 @@ export default function Experience() {
         >
           <div className="mb-3">
             <h2 className="text-3xl font-semibold text-black">{exp.company}</h2>
-            <p className="text-gray-600 text-xl">{exp.description}</p>
+            <p className="text-gray-600 text-xl dark:text-gray-400">{exp.description}</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 text-xl gap-y-2 gap-x-8 mb-4">
             <div>
               <p>
-                <span className="font-medium text-gray-800">Position:</span>{" "}
+                <span className="font-medium text-gray-800 dark:text-white">Position:</span>{" "}
                 {exp.position}
               </p>
               <p>
-                <span className="font-medium text-gray-800">Location:</span>{" "}
+                <span className="font-medium text-gray-800 dark:text-white">Location:</span>{" "}
                 {exp.location}
               </p>
               <p>
-                <span className="font-medium text-gray-800">Duration:</span>{" "}
+                <span className="font-medium text-gray-800 dark:text-white">Duration:</span>{" "}
                 {exp.duration}
               </p>
             </div>
             <div>
               <p>
-                <span className="font-medium text-xl text-gray-800">Industry:</span>{" "}
+                <span className="font-medium text-xl text-gray-800 dark:text-white">Industry:</span>{" "}
                 {exp.industry}
               </p>
               {exp.website && (
@@ -86,7 +86,7 @@ export default function Experience() {
             </div>
           </div>
 
-          <ul className="list-disc list-inside text-xl text-gray-700 leading-relaxed space-y-1">
+          <ul className="list-disc list-inside text-xl text-gray-700 leading-relaxed space-y-1 dark:text-gray-400">
             {exp.responsibilities.map((item, i) => (
               <li key={i}>{item}</li>
             ))}
