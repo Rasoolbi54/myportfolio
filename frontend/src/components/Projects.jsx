@@ -112,15 +112,13 @@ const projects = [
 
 
   },
-  // {
-  //   title: "Mobile Service Web App",
-  //   tech: ["React", "Bootstrap", "Firebase"],
-  //   description:
-  //     "A mobile repair booking system where users can choose services, get cost estimates, and schedule doorstep service. Designed for fast and responsive mobile-first experience.",
-  //   image:
-  //     "https://img.freepik.com/premium-vector/computer-monitor-blank-display-screen-desktop-pc-laptop-flat-vector-illustration_768671-248.jpg?semt=ais_hybrid&w=740",
-  //   link: "https://mobiserviceapp.netlify.app",
-  // },
+  {
+    title: "Peediyo-Marketing Agency",
+    tech: ["Next.js", "Tailwind css", "Calendy"],
+    description:"Peediyo is a modern marketing agency website designed using Next.js and Tailwind CSS, focusing on a fast, responsive, and user-friendly experience. It allows users to explore services, view cost estimates, and schedule doorstep appointments through Calendy integration. Built with a mobile-first approach, the site enhances user engagement and conversion through smooth navigation and clean UI.",
+    image:"peediyo.png",
+    link: "https://peediyoo.vercel.app/",
+  },
   {
     title: "Chrome Extension - Lead Manager",
     tech: ["JavaScript", "Chrome API", "Hugging Face"],

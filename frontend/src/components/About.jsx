@@ -8,10 +8,10 @@ function About() {
     "Bootstrap",
     "JavaScript",
     "React",
+    "Next Js",
     "Git",
     "Tailwind CSS",
     "Responsive desgin",
-    
     "PostgreSQL", "Node JS", "Express JS", "MongoDB",
     "VS Code", "GitHub", "Postman", ]
 
